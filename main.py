@@ -27,7 +27,17 @@ chip_list2 = chip_string2.split(",")
 print(chip_list2)
 
 #TODO: list aliasing
+
+list1 = [1,2,3]
+list2 = list1 #is list2 a copy or an alias for list1?
+list4 = list1.copy() #also look up shallow vs deep copy
+list1[0]= 100
+print(list1)
+print(list2)
+
+#when you pass a list into a function you are making an alias for that list
+#change to the parameter persist
 #TODO: 2D list practice problem 
 
-x = 5 + 12 // 5
-print(x)
+
+
